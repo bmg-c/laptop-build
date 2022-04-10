@@ -1,0 +1,4 @@
+#!/bin/sh
+
+bluetoothctl disconnect "$(bluetoothctl devices | grep -i 'AirDots_R' | awk '{print $2}')"
+bluetoothctl power off

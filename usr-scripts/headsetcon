@@ -1,0 +1,5 @@
+#!/bin/sh
+
+bluetoothctl power on
+bluetoothctl trust "$(bluetoothctl devices | grep -i 'AirDots_R' | awk '{print $2}')"
+bluetoothctl connect "$(bluetoothctl devices | grep -i 'AirDots_R' | awk '{print $2}')"
