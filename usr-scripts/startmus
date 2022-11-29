@@ -1,0 +1,30 @@
+#!/bin/sh
+brightnessctl set 0
+sleep 1
+brightnessctl set +9
+sleep 0.05
+brightnessctl set +9 
+sleep 0.05
+brightnessctl set +9 
+sleep 0.05
+brightnessctl set +9 
+sleep 0.05
+brightnessctl set +9 
+sleep 0.05
+brightnessctl set +9 
+sleep 0.05
+brightnessctl set +9 
+sleep 0.05
+brightnessctl set +9 
+sleep 0.05
+brightnessctl set +9 
+sleep 0.05
+brightnessctl set +9
+
+cd /home/ivan/git/paperview
+./paperview /home/ivan/Desktop/gif 5 &
+
+mplayer /home/ivan/Desktop/saul.mp3
+
+killall paperview
+feh --bg-scale /home/ivan/Desktop/gif/saul-76.bmp

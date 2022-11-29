@@ -1,1 +1,1 @@
-setxkbmap -model pc105 -layout dvorak -option "terminate:ctrl_alt_bksp"
+setxkbmap -model pc105 -layout us,us -variant engram-qwerty,russian-qwerty option "terminate:ctrl_alt_bksp"

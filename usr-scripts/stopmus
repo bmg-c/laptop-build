@@ -1,0 +1,3 @@
+#!/bin/sh
+kill "$(pstree -lp | grep -- -startmus\([0-9] | sed "s/.*startmus(\([0-9]\+\)).*/\1/")"
+kill "$(pstree -lp | grep -- -mplayer\([0-9] | sed "s/.*mplayer(\([0-9]\+\)).*/\1/")"

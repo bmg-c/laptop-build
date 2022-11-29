@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd /home/ivan/Programms/atom
+./atom --no-sandbox
