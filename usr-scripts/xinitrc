@@ -42,10 +42,7 @@ synclient ClickFinger3=3
 synclient HorizTwoFingerScroll=1
 xset m 1 0
 
-setxkbmap -model pc105 -layout us,ru -variant dvorak-qwerty, -option "grp:ctrl_shift_toggle" -option "terminate:ctrl_alt_bksp"
+setxkbmap -model pc105 -layout us,us -variant engram-qwerty,russian-qwerty -option "grp:ctrl_shift_toggle" -option "terminate:ctrl_alt_bksp"
 
+startmus & 
 exec dwm & dwmbar
-
-
-
-
