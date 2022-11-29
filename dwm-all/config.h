@@ -118,19 +118,24 @@ static Key keys[] = {
 	{ MODKEY,                       53,  	   shiftview,      {.i = -1 } },
 	{ MODKEY,                       234,  	   shiftview,      {.i = -1 } },
 	{ MODKEY,                       54,  	   shiftview,      {.i = +1 } },
-	{ MODKEY,                       235,  	   shiftview,      {.i = +1 } },	
+	{ MODKEY,                       235,  	   shiftview,      {.i = +1 } },
 	{ MODKEY|ShiftMask,             41,      togglefullscr,  {0} },
 	{ MODKEY|ShiftMask,             221,      togglefullscr,  {0} },
 	{ MODKEY,							  111,	   spawn,	   SHCMD("amixer-louder")},
 	{ MODKEY,							  116,   spawn,	   SHCMD("amixer-quieter")},
-	{ MODKEY|ShiftMask,                                                         111,     spawn,          SHCMD("amixer-louder-headphones")},
-        { MODKEY|ShiftMask,                                                         116,   spawn,    SHCMD("amixer-quieter-headphones")},
+
+	{ MODKEY|ControlMask,			  111,	spawn,	   SHCMD("cmus-remote -v +5%")},
+	{ MODKEY|ControlMask,			  116,   spawn,	   SHCMD("cmus-remote -v -5%")},
+	{ MODKEY|ControlMask,			  113,	spawn,	   SHCMD("cmus-remote -r")},
+	{ MODKEY|ControlMask,			  114,   spawn,	   SHCMD("cmus-remote -n")},
+	{ MODKEY|ControlMask,			  36,	spawn,	   SHCMD("cmus-remote -u")},
+
 	{ MODKEY,                       75,	   spawn,          SHCMD("setlayout-dvorakqw") },
 	{ MODKEY,							  76,	   spawn,	   SHCMD("setlayout-dvorak") },
 	{ MODKEY,                       95,    spawn,          SHCMD("setlayout-qwerty") },
 	{ MODKEY,                       71,	   spawn,          SHCMD("darker") },
 	{ MODKEY,                       72,     spawn,          SHCMD("brighter") },
-        { MODKEY,                       67,     spawn,          SHCMD("standard") },
+   { MODKEY,                       67,     spawn,          SHCMD("standard") },
 	TAGKEYS(                        10,                      0)
 	TAGKEYS(                        131,                      0)
 	TAGKEYS(                        11,                      1)
