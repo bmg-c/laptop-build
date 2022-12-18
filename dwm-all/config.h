@@ -7,12 +7,12 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrains Mono:size=10" };
-static const char dmenufont[]       = "Jetbrains Mono:size=10";
+static const char dmenufont[]       = "JetBrains Mono:size=10";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#008080";
+static const char col_cyan[]        = "#e54f6e";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -123,6 +123,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             221,      togglefullscr,  {0} },
 	{ MODKEY,							  111,	   spawn,	   SHCMD("amixer-louder")},
 	{ MODKEY,							  116,   spawn,	   SHCMD("amixer-quieter")},
+
+	{ MODKEY|ShiftMask,							  219,	   spawn,	   SHCMD("flameshot gui")},
 
 	{ MODKEY|ControlMask,			  111,	spawn,	   SHCMD("cmus-remote -v +5%")},
 	{ MODKEY|ControlMask,			  116,   spawn,	   SHCMD("cmus-remote -v -5%")},
